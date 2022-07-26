@@ -1,0 +1,213 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>My Page</title>
+    <style>
+      .body{
+        background: url(/white.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: auto;
+      }
+      .navbar{
+        font-size: 10vw;
+      }
+      .section, .lang{
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <header>
+      <nav class="nav-wrapper black">
+        <div class="container" id="navbar">
+          <a href="#" class="brand-logo orange-text darken-4">Kingsley Onyenze</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons orange-text">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="orange-text darken-4" href="#">Portfolio</a></li>
+            <li><a class="orange-text darken-4" href="#about">About</a></li>
+            <li><a class="orange-text darken-4" href="#">Testimonials</a></li>
+            <li>
+              <a
+                class="btn orange white-text darken-4 waves-effect waves-light"
+                href="#contact"
+                >Get in Touch</a
+              >
+            </li>
+          </ul>
+          <ul class="sidenav orange" id="mobile-links">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Get in Touch</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="container section">
+      <div class="row">
+        <div class="col s12 l6 pull-l2 right-align" id="text">
+          <h1>Creative Frontend Developer.</h1>
+          <p class="flow-text">I am a frontend developer who loves to bring ideas to life in the browser, building user-friendly webpages from scratch with great user experience</p>
+        </div>
+        <div class="col s12 l4 offset-l1 ">
+          <img src="/me.jpeg" alt="" class="responsive-img materialboxed">
+        </div>
+      </div>
+    </section>
+    </div>
+    <div class="container">
+      <div class="row lang">
+        <div class="col s12 l5">
+          <div class="card z-depth-3">
+            <div class="card-image">
+              <img src="/css.png" alt="" class="responsive-img">
+            </div>
+            <div class="card-content">
+              <span class="card-title">HTML/CSS</span>
+              <ul>
+                <li>Semantics</li>
+                <li>Grid and Flexbox</li>
+                <li>Mobile Responsiveness</li>
+                <li>Bootstrap</li>
+                <li>Materialize</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <div class="card z-depth-3">
+            <div class="card-image">
+              <img src="/java.png" alt="" class="responsive-img">
+            </div>
+            <div class="card-content">
+              <span class="card-title">JavaScript</span>
+              <ul>
+                <li>DOM Manipulation</li>
+                <li>Object Oriented JS</li>
+                <li>Asynchronous JS</li>
+                <li>REST API</li>
+                <li>ReactJS</li>
+                <li>JQuery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l8 offset-l2">
+        <div class="container center-align">
+          <h3>I am proud to have worked with some awesome companies:</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+      <div class="col s6 l3">
+        <div class="container">
+          <img src="/zuri.png" alt="" class="responsive-img">
+        </div>
+      </div>
+      <div class="col s6 l3">
+        <div class="container">
+          <img src="/side.jfif" alt="" class="responsive-img">
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <section class="container scrollspy" id="contact">
+      <div class="row">
+        <div class="col s12 l5">
+          <h2 class="orange-text text-darken-4">Get In Touch</h2>
+          <p class="flow-text">Send a general message or details of a project you'd like me to be a part of and I'll get back to you as soon as possible.</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+          <form action="">
+            <div class="input-field">
+              <i class="material-icons prefix">person</i>
+              <input type="text" id="name">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input type="email" id="email">
+              <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">phone</i>
+              <input type="tel" id="phone">
+              <label for="phone">Your PhoneNumber</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">domain</i>
+              <input type="url" id="url">
+              <label for="url">Your Website</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea class="materialize-textarea" id="message"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <div class="input-field center">
+              <button href="#" class="btn-large orange">
+                <span>Send</span>
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer orange darken-3 black-text scrollspy" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l6">
+            <h3>About Me</h3>
+            <p class="flow-text">Hi! I'm Kingsley. Nice to meet you</p>
+            <p>I am a Front-end Developer, with a year of experience using HTML, CSS and JavaScript, and a graduate of Physics.I create websites that are fast, easy to use, and built with best practices.I am enthusiastic, confident, passionate, and continuously working on improving myself, one code at a time.</p>
+          </div>
+          <div class="col s12 l4 offset-l2">           
+            <div class="container flow-text">
+            <h5>Connect</h5>
+              <ul>
+                <a href=""><li>Follow me on GitHub</a></li>
+                <a href=""><li>Follow me on LinkedIn</a></li>
+                <a href=""><li>Follow me on Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+        <div class="container center-align">&copy; Kingsley Onyenze 2022</div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+        $('.materialboxed').materialbox();
+        $('.scrollspy').scrollSpy();
+      });(jQuery);
+    </script>
+  </body>
+</html>
